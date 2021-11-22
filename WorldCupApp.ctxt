@@ -1,16 +1,19 @@
 #BlueJ class context
 comment0.target=WorldCupApp
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WorldCupApp\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ WorldCupApp\ class\ provides\ support\ for\ keeping\ track\ of\ mathes\ played\ during\ the\ 2022\ World\ Cup.\r\n\r\n\ @author\ (Tannia\ Chevez(10),\ Kyle\ Dalton\ (10),\ Nick\ Farrell\ (10))\r\n
 comment1.params=
 comment1.target=WorldCupApp()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WorldCupApp\r\n
 comment2.params=team
 comment2.target=int\ setRandomTeamName(WorldCupTeam)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment2.text=\r\n\ method\ that\ selects\ a\ random\ name\ form\ the\ list\ of\ countries\ to\ provide\ as\ a\ team\ name.\r\n
 comment3.params=
 comment3.target=void\ worldCupSetup()
+comment3.text=\r\n\ method\ that\ creates\ teams\ and\ adds\ them\ to\ groups.\ \r\n
 comment4.params=
 comment4.target=void\ randomMatches()
+comment4.text=\r\n\ method\ that\ creates\ random\ matches\ for\ each\ group\ created\ in\ worldCupSetup()\ method.\r\n
 comment5.params=
 comment5.target=void\ getRankingsForRandomMatches()
+comment5.text=\r\n\ method\ that\ prints\ the\ results\ of\ ranking\ for\ all\ the\ six\ groups.\ \r\n
 numComments=6

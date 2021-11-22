@@ -2,14 +2,13 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.*;
 /**
- * Write a description of class WorldCupGroup here.
+ * WorldCupGroup class manage the information of each group playing in the 2022 World Cup.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Tannia Chevez(10), Kyle Dalton (10), Nick Farrell (10))
  */
 public class WorldCupGroup
 {
-    // instance variables - replace the example below with your own
+    // instance variables
     private int win;
     private int draw;
     private double goalScored;
@@ -29,14 +28,14 @@ public class WorldCupGroup
         teams = new ArrayList<WorldCupTeam>();
         
     }
+    /**
+     * Assesor method for the name of the group
+     */
     public String getName(){
         return name;
     }
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * method that adds a maximum of 4 teams to a group.
      */
     public void addTeam(WorldCupTeam team){
         if (teams.size() != 4){
@@ -47,6 +46,9 @@ public class WorldCupGroup
         }
         
     }
+    /**
+     * method that adds a match between two teams in the same group.
+     */
     public void addMatch(WorldCupTeam team1,WorldCupTeam team2, int score1, int score2){
         if (score1 > score2){
             team1.addPoints(win);   
@@ -62,6 +64,9 @@ public class WorldCupGroup
         team2.addGoalsScored(score2);
         team2.addGoalsAgainst(score1);   
     }
+    /**
+     * method that creates 30 random matches in a group.
+     */
     public void createRandomMatches(){
         for (int i = 0; i < 30; i++){
             Random rand = new Random();
@@ -76,6 +81,9 @@ public class WorldCupGroup
             
         }
     }
+    /**
+     * method that determines the ranking for the group. The ranking is displayed.
+     */
     public void calculateRanking(){
         int pos;
         WorldCupTeam temp = new WorldCupTeam();
@@ -99,7 +107,7 @@ public class WorldCupGroup
         for(WorldCupTeam team: teams){
             cont++;
             System.out.printf("\n%s               %d               %.2f\n\n",team.getName(),team.getPoints(),(team.getGoalsScored()*0.1));
-	}
+    }
     }
   
 }

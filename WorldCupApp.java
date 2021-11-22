@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 import java.util.Random;
 /**
- * Write a description of class WorldCupApp here.
+ * WorldCupApp class provides support for keeping track of mathes played during the 2022 World Cup.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Tannia Chevez(10), Kyle Dalton (10), Nick Farrell (10))
  */
 public class WorldCupApp
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private ArrayList<WorldCupGroup> groups;
     private Random rand = new Random();
     private String [] country_names = {"Algeria","Senegal","Denmark","Switzerland","Sweden","Chile","Mexico","Italy","Colombia","Netherlands","Croatia","Belgium","Uruguay","Portugal","Spain","England","Germany","France","Argentina","Brazil", "USA", "Canada","Honduras","Peru","Chile"};
@@ -18,16 +17,14 @@ public class WorldCupApp
      */
     public WorldCupApp()
     {
+        
         groups = new ArrayList<WorldCupGroup>();
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * method that selects a random name form the list of countries to provide as a team name.
      */
-    public int setRandomTeamName(WorldCupTeam team){
+    private int setRandomTeamName(WorldCupTeam team){
         boolean repeat=true;
         while (repeat){
             String new_name="";
@@ -42,7 +39,10 @@ public class WorldCupApp
         }
         return -1;
     }
-    public void worldCupSetup(){
+    /**
+     * method that creates teams and adds them to groups. 
+     */
+    private void worldCupSetup(){
         for (int j = 0; j < 6; j++){
             WorldCupGroup group = new WorldCupGroup("Group"+(j+1));
             for (int i = 0; i < 4; i++){
@@ -55,11 +55,17 @@ public class WorldCupApp
             groups.add(group);
         }
     }
-    public void randomMatches(){
+    /**
+     * method that creates random matches for each group created in worldCupSetup() method.
+     */
+    private void randomMatches(){
         for(WorldCupGroup group : groups){
             group.createRandomMatches();
         }
     }
+    /**
+     * method that prints the results of ranking for all the six groups. 
+     */
     public void getRankingsForRandomMatches(){
         worldCupSetup();
         randomMatches();

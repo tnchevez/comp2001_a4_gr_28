@@ -1,18 +1,22 @@
 #BlueJ class context
 comment0.target=WorldCupGroup
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WorldCupGroup\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ WorldCupGroup\ class\ manage\ the\ information\ of\ each\ group\ playing\ in\ the\ 2022\ World\ Cup.\r\n\r\n\ @author\ (Tannia\ Chevez(10),\ Kyle\ Dalton\ (10),\ Nick\ Farrell\ (10))\r\n
 comment1.params=groupName
 comment1.target=WorldCupGroup(java.lang.String)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WorldCupGroup\r\n
 comment2.params=
 comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Assesor\ method\ for\ the\ name\ of\ the\ group\r\n
 comment3.params=team
 comment3.target=void\ addTeam(WorldCupTeam)
-comment3.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment3.text=\r\n\ method\ that\ adds\ a\ maximum\ of\ 4\ teams\ to\ a\ group.\r\n
 comment4.params=team1\ team2\ score1\ score2
 comment4.target=void\ addMatch(WorldCupTeam,\ WorldCupTeam,\ int,\ int)
+comment4.text=\r\n\ method\ that\ adds\ a\ match\ between\ two\ teams\ in\ the\ same\ group.\r\n
 comment5.params=
 comment5.target=void\ createRandomMatches()
+comment5.text=\r\n\ method\ that\ creates\ 30\ random\ matches\ in\ a\ group.\r\n
 comment6.params=
 comment6.target=void\ calculateRanking()
+comment6.text=\r\n\ method\ that\ determines\ the\ ranking\ for\ the\ group.\ The\ ranking\ is\ displayed.\r\n
 numComments=7
